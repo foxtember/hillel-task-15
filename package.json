@@ -1,0 +1,12 @@
+{
+	"name": "hillel-task-15",
+	"version": "0.0.1",
+	"description": "",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel": "^1.11.0",
+		"sass": "^1.16.1"
+	}
+}

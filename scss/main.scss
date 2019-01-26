@@ -1,0 +1,71 @@
+@import "reset";
+
+
+.fill-box{
+    transform-box: fill-box; 
+}
+
+.robo-beaver-svg{
+    display: block;
+
+    height: 400px;
+
+    margin: 25px auto;
+}
+
+.abdomen{
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: levitation 1s linear 0s infinite alternate;
+    transform-origin: center;
+}
+
+.right-eye{
+    animation: min-max 1s ease-out infinite alternate;
+    transform-origin: center;
+}
+
+.left-eye{
+    animation: min-max 1s ease-out infinite alternate;
+    transform-origin: center;
+}
+
+.antenna-pin{
+    offset-path: path('m67.04 175.8s-12.95-2.646-8.882-7.229 49.94 7.229 35.1-.378-40.4-.661-29.81-6.426 36.62 2.268 15.92-3.4c-7.117-1.95-8.264-3.636-9.268-4.391a3.677 3.677 0 01-1.467-3.423');
+    animation: antenna-run 2s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes min-max{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(0.4);
+    }
+}
+
+@keyframes levitation{
+    $abc: 2px;
+    $initial-y-translate: 4px;
+
+    from{
+        transform: translateY(-$abc + $initial-y-translate);
+    }
+
+    to{
+        transform: translateY($abc + $initial-y-translate);
+    }
+}
+
+@keyframes antenna-run{
+    from{
+        offset-distance: 100%;
+        opacity: 1;
+    }
+
+    to{
+        offset-distance: 5%;
+        opacity: 0.1;
+    }
+}
