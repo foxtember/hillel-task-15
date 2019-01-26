@@ -6,7 +6,7 @@
 	"author": "",
 	"license": "ISC",
 	"scripts": {
-		"start": "npm install && npx parcel serve index.html --open"
+		"start": "npm install && parcel serve index.html --open"
 	},
 	"devDependencies": {
 		"parcel": "^1.11.0",
