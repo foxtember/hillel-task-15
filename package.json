@@ -5,6 +5,9 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"scripts": {
+		"start": "npm install && npx parcel serve index.html --open"
+	},
 	"devDependencies": {
 		"parcel": "^1.11.0",
 		"sass": "^1.16.1"
